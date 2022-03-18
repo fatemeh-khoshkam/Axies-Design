@@ -240,7 +240,7 @@
         left: inherit;
     }
 }
-@media (max-width: 1350px) {
+@media (max-width: 1348px) {
     .navbar__menu > ul > li > a {
         font-size: 1.5rem;
     }
@@ -276,12 +276,9 @@
         max-width: 330px;
     }
 }
-@media (min-width: 1351px) {
-    .sticky--header {
-        width: 96% !important;
-        left: 3rem;
-    }
+
+@media screen and (max-width: 1380px) and (min-width: 1349px) {
     .navbar__menu > ul > li > a {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
