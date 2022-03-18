@@ -210,6 +210,10 @@
     top: 0.5rem;
     box-shadow: rgb(59 53 53 / 30%) 0px 20px 18px !important;
 }
+.sticky--header .container {
+    padding: 0.5%;
+    max-width: 100%;
+}
 @media (max-width: 440px) {
     .navbar {
         justify-content: space-between;
@@ -274,6 +278,16 @@
     .navbar__submenu--single {
         min-width: 230px;
         max-width: 330px;
+    }
+    .sticky--header .navbar__menu > ul > li {
+        margin-left: 1.9rem;
+    }
+    .sticky--header .navbar__menu > ul > li > a {
+        font-size: 1.5rem;
+    }
+    .sticky--header .container {
+        padding: 0.5%;
+        max-width: 100%;
     }
 }
 
