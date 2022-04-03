@@ -24,12 +24,17 @@
     --font-size-lg: 1.25rem;
     --font-size-xl: 1.5rem;
 }
-/* ::selection {
-    background: linear-gradient(178.56deg, #e250e5 5.32%, #4b50e6 94.32%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: var(--primary-font);
-} */
+::-webkit-scrollbar {
+    width: 0.8rem;
+    height: 3rem;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(-45deg, #e350e594, #744be691 50%, #9b3a76b2);
+    border-radius: 2rem;
+}
 html {
     font-family: 'Urbanist', sans-serif;
     font-size: 62.5%;
@@ -86,6 +91,7 @@ a {
     margin-right: 1rem;
 }
 #scroll--top {
+    z-index: 2;
     position: fixed;
     display: flex;
     padding: 1.5rem;

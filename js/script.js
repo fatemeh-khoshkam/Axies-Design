@@ -57,19 +57,27 @@ function setTimer(enddate, elem){
 }
 
 setTimer(
-   new Date("March 21, 2022 18:17:04"),
+   new Date("May 21, 2022 18:17:04"),
    document.getElementById("card__time1")
   );
  setTimer(
-   new Date("March 29, 2022 15:37:25"),
+   new Date("July 29, 2022 15:37:25"),
    document.getElementById("card__time2")
   );
   setTimer(
-   new Date("March 25, 2022 05:30:55"),
+   new Date("Septamber 25, 2022 05:30:55"),
    document.getElementById("card__time3")
   );
   setTimer(
-   new Date("March 23, 2022 22:19:45"),
+   new Date("June 23, 2022 22:19:45"),
    document.getElementById("card__time4")
   );
 
+
+
+
+
+
+
+
+  

@@ -107,11 +107,11 @@
     border-radius: 1rem;
     cursor: pointer;
     color: var(--primary-font);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    transition: all 1.5s ease;
 }
 .footer--social-item:hover {
     background: linear-gradient(
@@ -122,6 +122,7 @@
         rgb(75 80 230 / 80%) 100%
     );
     border-radius: 2.5rem;
+    transform: rotateY(360deg);
 }
 @media (min-width: 300px) {
     .footer__wrapper {

@@ -45,6 +45,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.navbar__menu > ul > li:hover > .navbar__menulink > i {
+    transform: rotate(180deg);
+    -webkit-text-fill-color: snow;
+}
 .navbar--right__wallet {
     display: flex;
     flex-direction: row;
@@ -90,6 +94,11 @@
 .navbar__menulink i {
     margin: 0 0.8rem;
     font-size: var(--font-size-lg);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 .navbar__submenu {
     position: absolute;
