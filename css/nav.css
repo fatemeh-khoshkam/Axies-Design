@@ -90,7 +90,23 @@
 .navbar--right__state a:first-child {
     margin-right: 1rem;
 }
-
+.navbar--right__state a:nth-child(2) {
+    color: var(--primary-font);
+    background: linear-gradient(
+        90deg,
+        rgb(75 80 230 / 74%) 15%,
+        rgb(130 80 230 / 79%) 57%,
+        rgb(226 80 229 / 60%) 100%,
+        rgb(75 80 230 / 80%) 100%
+    );
+}
+.navbar--right__state a:nth-child(2) i {
+    -webkit-animation: star 1s linear infinite;
+    animation: star 1s linear infinite;
+}
+.navbar--right__state a:nth-child(1) {
+    background-color: var(--primary-font);
+}
 .navbar__menulink i {
     margin: 0 0.8rem;
     font-size: var(--font-size-lg);
@@ -303,5 +319,19 @@
 @media screen and (max-width: 1380px) and (min-width: 1349px) {
     .navbar__menu > ul > li > a {
         font-size: 1.4rem;
+    }
+}
+@keyframes star {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
     }
 }

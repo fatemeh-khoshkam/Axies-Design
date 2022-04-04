@@ -88,6 +88,20 @@
 .auction__card--title a {
     color: var(--primary-font) !important;
     font-size: 1.8rem;
+    background: linear-gradient(
+        to right,
+        #e250e5,
+        #4b50e6 50%,
+        var(--primary-font) 50%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+.auction__card--title a:hover {
+    background-position: 0 100%;
 }
 .auction__card--info {
     display: flex;
@@ -103,12 +117,29 @@
 .auction__author--info h6 a {
     color: #ffffff;
     font-size: 1.5rem;
+    font-weight: bolder;
 }
 .auction__info--author {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     margin-bottom: 1rem;
+}
+.auction__author--info a {
+    background: linear-gradient(
+        to right,
+        #e250e5,
+        #4b50e6 50%,
+        var(--primary-font) 50%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+.auction__author--info a:hover {
+    background-position: 0 100%;
 }
 .auction__author--avatar img {
     border-radius: 1.5rem;

@@ -531,14 +531,10 @@
                         </div>
                         <!-- mobile menu trigger -->
                         <div class="navbar--right__state">
-                            <a href="#"
-                                ><img src="image/01_header/sun.png" alt="sun"
-                            /></a>
-                            <a href="#"
-                                ><img
-                                    src="image/01_header/moon-2.png"
-                                    alt="moon"
-                            /></a>
+                            <a href="login.html"
+                                ><i class="fa-solid fa-user"></i
+                            ></a>
+                            <a href="#"><i class="fa-solid fa-moon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -627,9 +623,17 @@
                                 <div class="auctionItem--icons-right">
                                     <div class="auctionItem--icon-light">
                                         <i class="fa-solid fa-share"></i>
+                                        <span
+                                            class="share--detail-tooltip icon-tooltip"
+                                            >share</span
+                                        >
                                     </div>
                                     <div class="auctionItem--icon-light">
                                         <i class="fa-solid fa-ellipsis"></i>
+                                        <span
+                                            class="more--detail-tooltip icon-tooltip"
+                                            >more</span
+                                        >
                                     </div>
                                 </div>
                             </div>
@@ -672,6 +676,22 @@
                                 ultrices eget. Facilisi lobortisal morbi
                                 fringilla urna amet sed ipsum
                             </p>
+                            <div class="auctionItem--owners details--item-bid">
+                                <div class="auction__author">
+                                    <span>Current Bid</span>
+                                    <div class="auction__price--details">
+                                        <h5>4.89 ETH</h5>
+                                        <span> = $12.246</span>
+                                    </div>
+                                </div>
+                                <div class="auction__author">
+                                    <span>Count Down</span>
+                                    <p
+                                        class="card__time--text"
+                                        id="card__time5"
+                                    ></p>
+                                </div>
+                            </div>
                             <div class="auctionItem--details"></div>
                             <a href="#" class="btn btn-item">
                                 <i class="fa-solid fa-bag-shopping"></i>
@@ -1388,5 +1408,11 @@
 
         <!-- scripts -->
         <script src="js/script.js"></script>
+        <script>
+            setTimer(
+                new Date('June 23, 2022 22:19:45'),
+                document.getElementById('card__time5')
+            );
+        </script>
     </body>
 </html>
