@@ -98,6 +98,17 @@
 .auction__price--details h5 {
     font-size: 1.8rem;
 }
+.price--eth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--primary-font);
+}
+.price--eth i {
+    color: var(--primary-font);
+    font-size: 1.5rem;
+}
 .auction__info--author {
     justify-content: space-between;
 }
@@ -127,8 +138,8 @@
     width: 100%;
 }
 .auctionItem--left:hover img {
-    -webkit-filter: sepia(100%);
-    filter: sepia(100%);
+    -webkit-filter: sepia(80%);
+    filter: sepia(80%);
 }
 .auctionItem--icons-left .auction__like {
     background-color: var(--bg-darker);
@@ -327,7 +338,7 @@
     padding: 1.7rem 3.5rem 0 0;
     color: var(--login-color);
     opacity: 0;
-    transition: all 0.4s;
+    /* transition: all 0.4s; */
     width: 100%;
 }
 .tab-switch:checked + .tab-label {
@@ -393,7 +404,7 @@
 .tab-switch:checked + label + .tab-content {
     z-index: 2;
     opacity: 1;
-    transition: all 0.4s;
+    /*     transition: all 0.4s; */
     overflow: auto;
 }
 .tab-content::-webkit-scrollbar {

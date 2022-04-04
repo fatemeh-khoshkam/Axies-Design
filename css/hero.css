@@ -98,8 +98,8 @@
     position: relative;
     right: 8rem;
     top: -3rem;
-    -webkit-animation: nft 6s infinite ease-out;
-    animation: nft 6s infinite ease-out;
+    -webkit-animation: nft 6s infinite ease-in-out;
+    animation: nft 6s infinite ease-in-out;
 }
 .hero__image--circle {
     position: absolute;
@@ -115,8 +115,8 @@
     height: 4rem;
     position: absolute;
     right: 41rem;
-    -webkit-animation: move-circle 6s infinite ease-out;
-    animation: move-circle 6s infinite ease-out;
+    -webkit-animation: move-circle 6s infinite ease-in-out;
+    animation: move-circle 6s infinite ease-in-out;
 }
 .hero__shape--circle1 {
     background: transparent !important;
@@ -127,8 +127,8 @@
     position: absolute;
     right: 61rem;
     top: 40rem;
-    -webkit-animation: move-circle1 6s infinite ease-out;
-    animation: move-circle1 6s infinite ease-out;
+    -webkit-animation: move-circle1 6s infinite ease-in-out;
+    animation: move-circle1 6s infinite ease-in-out;
 }
 .hero__shape--star {
     font-size: 2.2rem;

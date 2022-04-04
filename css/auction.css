@@ -125,7 +125,9 @@
     gap: 1rem;
     margin-bottom: 1rem;
 }
-.auction__author--info a {
+.auction__author--info a,
+.auction__price--details a,
+.pick__history a {
     background: linear-gradient(
         to right,
         #e250e5,
@@ -137,9 +139,27 @@
     background-size: 200% 100%;
     background-position: 100%;
     transition: background-position 275ms ease;
+    font-weight: bolder;
 }
-.auction__author--info a:hover {
+.auction__author--info a:hover,
+.auction__price--details a:hover,
+.pick__history a:hover {
     background-position: 0 100%;
+}
+.pick__history a:hover i {
+    transition: all 0.7s ease-in-out;
+    animation: history 1s ease;
+    background: linear-gradient(to right, #e250e5, #4b50e6 200%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes history {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
 }
 .auction__author--avatar img {
     border-radius: 1.5rem;

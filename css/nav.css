@@ -47,7 +47,8 @@
 }
 .navbar__menu > ul > li:hover > .navbar__menulink > i {
     transform: rotate(180deg);
-    -webkit-text-fill-color: snow;
+    background: linear-gradient(178.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+    -webkit-background-clip: text;
 }
 .navbar--right__wallet {
     display: flex;
@@ -106,6 +107,17 @@
 }
 .navbar--right__state a:nth-child(1) {
     background-color: var(--primary-font);
+}
+.navbar--right__state a:nth-child(1):hover i {
+    background: linear-gradient(
+        90deg,
+        rgb(75 80 230 / 74%) 15%,
+        rgb(130 80 230 / 79%) 57%,
+        rgb(226 80 229 / 60%) 100%,
+        rgb(75 80 230 / 80%) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .navbar__menulink i {
     margin: 0 0.8rem;
