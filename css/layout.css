@@ -83,12 +83,21 @@ a {
 .btn:hover {
     background-position: 0 100%;
 }
-.btn span {
+.btn span,.btn-primary span {
     font-size: var(--font-size-xl);
     font-weight: 700;
 }
-.btn i {
+.btn i ,.btn-primary i{
     margin-right: 1rem;
+}
+.btn-primary {
+    font-family: inherit;
+    padding: 1rem 2.5rem;
+    outline: none;
+    border-radius: var(--border-radius-lg);
+    box-shadow: none;
+    color: var(--primary-font);
+    background-color: var(--blue);
 }
 #scroll--top {
     z-index: 2;
