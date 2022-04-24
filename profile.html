@@ -15,6 +15,12 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         />
         <!-- css links -->
+        <!--         <link
+            rel="stylesheet"
+            href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css"
+            type="text/css"
+        /> -->
+
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/nav.css" />
         <link rel="stylesheet" href="css/footer.css" />
@@ -611,14 +617,24 @@
                 <div class="container">
                     <div class="editProfile__left">
                         <div class="editProfile__left--avatar">
-                            <img src="image/04_Top Seller/avt-2.jpg" alt="" />
-                            <form action="">
+                            <div class="avatar">
+                                <img
+                                    src="image/09_Cover Image/imgslider.png"
+                                    alt=""
+                                    id="avatar"
+                                />
+                            </div>
+                            <form action="/file-upload" id="formUploadPhoto">
                                 <input type="file" name="" class="" />
                                 <a href="#" class="btn btn--borderColor">
                                     <span>Upload new photo</span>
                                 </a>
                             </form>
-                            <a href="#" class="btn btn--borderColor">
+                            <a
+                                href="#"
+                                class="btn btn--borderColor"
+                                id="deleteBtn"
+                            >
                                 <span>Delete</span>
                             </a>
                         </div>
@@ -629,13 +645,15 @@
                                 <h3>Choice your Cover image</h3>
                             </div>
                             <div class="editProfile__right--coverImage">
-                                <form action="">
-                                    <input type="file" name="" class="" />
+                                <form action="/file-upload" id="formUploadFile">
+                                    <input type="file" name="file" />
+                                    <h4>Drag & Drop to Upload File</h4>
                                     <a href="#" class="btn btn--borderColor">
-                                        <span>Upload files</span>
+                                        <span>Choose files</span>
                                     </a>
                                 </form>
                                 <img
+                                    id="cover"
                                     src="image/09_Cover Image/option1_bg_profile.jpg"
                                     alt=""
                                 />
@@ -840,8 +858,9 @@
         <div id="scroll--top">
             <i class="fa-solid fa-angle-up"></i>
         </div>
-
         <!-- scripts -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="js/menu.js"></script>
+        <script src="js/upload.js"></script>
     </body>
 </html>

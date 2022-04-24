@@ -98,6 +98,14 @@ a {
     box-shadow: none;
     color: var(--primary-font);
     background-color: var(--blue);
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.btn-primary:hover{
+    transform: translateX(1rem);
+    background-color: #5142fc7a;
 }
 #scroll--top {
     z-index: 2;
@@ -167,10 +175,6 @@ a {
     transition: all 1.3s ease-in-out;
 }
 .socials__item:hover i {
-    /*     background: linear-gradient(178.56deg, #e250e5 5.32%, #4b50e6 94.32%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-
     background: linear-gradient(
         90deg,
         rgb(75 80 230 / 74%) 15%,
