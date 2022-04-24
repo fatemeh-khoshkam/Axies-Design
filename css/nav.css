@@ -255,13 +255,15 @@
     .navbar {
         justify-content: space-between;
         display: flex;
-        align-items: flex-start;
+        align-items: stretch;
+        flex-direction: column;
     }
     .navbar .navbar__item--right {
         display: flex;
         align-items: flex-end;
         flex-direction: column;
     }
+
 }
 @media (max-width: 1090px) {
     .navbar__item--center {

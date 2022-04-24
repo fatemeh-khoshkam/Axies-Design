@@ -15,7 +15,8 @@
     text-align: center;
     font-size: 1.2rem;
     position: absolute;
-    top: 1rem;
+    top: -1rem;
+    right: 2.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,9 +28,6 @@
     background: linear-gradient( 90deg, rgb(75 80 230 / 74%) 15%, rgb(130 80 230 / 79%) 57%, rgb(226 80 229 / 60%) 100%, rgb(75 80 230 / 80%) 100% );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-.sticky--header .navbar--right__state .badge{
-    top: 1.6rem;
 }
 #editProfile {
     padding: 7rem 0;
@@ -93,8 +91,12 @@
     height: inherit;
     width: 100%;
     border-radius: 0.7rem;
-    background: linear-gradient( 90deg, rgb(75 80 230 / 74%) 15%, rgb(130 80 230 / 79%) 57%, rgb(226 80 229 / 60%) 100%, rgb(75 80 230 / 80%) 100% ); 
     padding: 0.4rem;
+    transition: border 1s ease;
+    -webkit-transition: border 0.5s ease;
+    -moz-transition: border 0.5s ease;
+    -ms-transition: border 0.5s ease;
+    -o-transition: border 0.5s ease;
 } 
 .editProfile__right--coverImage form{
     border: 0.2rem dashed #383847;
@@ -216,8 +218,12 @@
     border-bottom: 0.1rem solid #5142fca6;
     box-shadow: 0.17rem 0.12rem 0.2rem 0.1rem #2d276a;
 }
-
-
+.navbar--right__state a:first-child {
+    position: relative;
+}
+.editProfile__right--coverImage img:hover {
+    border: 0.2rem dashed rgb(130 80 230 / 79%);
+}
 /* Container Media Query */
 @media only screen and (min-width: 50px) {
     #editProfile .container {
@@ -234,6 +240,14 @@
     .editProfile__right--account {
         display: grid;
         grid-template-columns: repeat(1,1fr);
+    }
+    .item--breadcrumbs{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+    #Item {
+        padding: 20rem 0 7rem 0 !important;
     }
 }
 @media only screen and (min-width: 250px) {
@@ -252,6 +266,7 @@
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
+
 }
 @media only screen and (min-width: 768px) {
     #editProfile .container {
@@ -264,6 +279,14 @@
     }
     .editProfile__right {
         grid-column: 3/-1;
+    }
+    .item--breadcrumbs{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    #Item {
+        padding: 15rem 0 7rem 0 !important;
     }
 }
 
