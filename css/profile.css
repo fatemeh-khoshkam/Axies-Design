@@ -36,8 +36,14 @@
 }
 #editProfile .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: repeat(4,minmax(20vw,1fr));
     gap: 3rem;
+}
+.editProfile__left{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: -webkit-fill-available;
 }
 .editProfile__left--avatar{
     display: flex;
@@ -49,7 +55,6 @@
     padding: 1.6rem;
     border-radius: 1.5rem;
     cursor: pointer;
-    width: 35rem;
 }
 .editProfile__left--avatar .avatar{ 
     border-radius: 1.5rem;
@@ -64,6 +69,7 @@
     border-color: var(--primary-font);
 }
 .editProfile__right{
+    grid-column: 2/-1;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -213,16 +219,59 @@
 
 
 /* Container Media Query */
+@media only screen and (min-width: 250px) {
+    #editProfile .container {
+        display: grid;
+        grid-template-columns: inherit;
+    }
+    .editProfile__right--coverImage{
+        grid-template-columns: repeat(1, minmax(10rem , 1fr));
+        height: min-content;
+    }
+    .editProfile__right--coverImage form{
+        padding: 2rem;
+    }
+    .editProfile__right--account {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
 @media only screen and (min-width: 576px) {
 
 }
 
 @media only screen and (min-width: 768px) {
-
+    #editProfile .container {
+        display: grid;
+        grid-template-columns: repeat(4,minmax(20vw,1fr));
+        gap: 3rem;
+    }
+    .editProfile__left{
+        grid-column: 1/3;
+    }
+    .editProfile__right {
+        grid-column: 3/-1;
+    }
 }
 
 @media only screen and (min-width: 992px) {
-
+    .editProfile__left{
+        grid-column: 1/2;
+    }
+    .editProfile__right {
+        grid-column: 2/-1;
+    }
+    .editProfile__right--coverImage {
+        grid-template-columns: repeat(3, minmax(10rem , 1fr));
+        height: 200px;
+    }
+    .editProfile__right--account {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .editProfile__right--coverImage form{
+        padding: 0;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
