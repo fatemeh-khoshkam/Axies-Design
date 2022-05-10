@@ -3,7 +3,7 @@
     position: fixed;
     z-index: 99;
     width: 100%;
-    padding: 1rem;
+    padding: 0 1rem;
     background-color: var(--bg-dark);
     border-bottom: 1px solid rgba(235, 235, 235, 0.2);
     -webkit-transition: all 0.5s ease;
@@ -24,31 +24,111 @@
     display: flex;
     align-items: center;
 }
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
 .navbar__menu > ul > li {
     font-weight: 600;
     margin-left: 3rem;
-    display: inline-block;
+    position: relative;
+    padding: 2.5rem 0;
     color: var(--primary-font);
 }
+.navbar__menulists{
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 .navbar__menu > ul > li > a {
-    position: relative;
     color: snow;
     font-size: 1.8rem;
-    -webkit-transition: color 0.5s ease;
-    -moz-transition: color 0.5s ease;
-    -ms-transition: color 0.5s ease;
-    -o-transition: color 0.5s ease;
-    transition: color 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.navbar__menu ul.navbar__menulists ul{
+    transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    position: absolute;
+    background-color: rgb(20 20 31 / 97%) !important;
+    box-shadow: 0.6rem 1rem 21px 5px rgb(112 112 112 / 13%);
+    border-radius: 0.3rem;
+    top: 100%;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    z-index: 1000;
+    width: 25rem;
+    visibility: hidden;
+    opacity: 0;
+}
+.navbar__menu > ul > li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+}
+.navbar__menu ul.navbar__menulists ul li{
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    transition: all 0.5s ease;
 }
 .navbar__menu > ul > li:hover > a {
-    background: linear-gradient(178.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+    background: linear-gradient(178.56deg, #180ca1 5.32%, #4b50e6 94.32%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .navbar__menu > ul > li:hover > .navbar__menulink > i {
     transform: rotate(180deg);
-    background: linear-gradient(178.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+    background: linear-gradient(178.56deg, #180ca1 5.32%, #4b50e6 94.32%);
     -webkit-background-clip: text;
+}
+.navbar__menu > ul > li > ul > li > a {
+    color: #ebebeba3;
+    transition: all 0.3s ease;
+}
+.navbar__menu > ul > li > ul > li:hover > a {
+    color: var(--blue);
+    transform: translateX(0.5rem);
+}
+.navbar__menu
+    > ul
+    > li
+    > ul
+    > li{
+    background: linear-gradient(to right, #5142fc3b 50%, transparent 50%);
+    display: block;
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+.navbar__menu
+    > ul
+    > li
+    > ul
+    > li:hover {
+        cursor: pointer;
+        position: relative;
+        background-position: left bottom;
+        border-radius: inherit;
+/* 
+        background: linear-gradient(172deg, #d3dce840 5.32%, #090b4c61 94.32%);
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        color: var(--blue); */
 }
 .navbar--right__wallet {
     display: flex;
@@ -167,10 +247,7 @@
     margin: 1rem 2rem 2rem 2rem;
     display: block;
 }
-.navbar__menu > ul > li .navbar__submenu > .megamenu__list--item > ul > li > a {
-    color: #ebebeba3;
-    display: inline-block;
-}
+
 .navbar__menu > ul > li .navbar__submenu > .megamenu__list--item > h4 {
     color: #551a8b;
     padding: 1rem;
@@ -183,19 +260,7 @@
     vertical-align: middle;
     border-radius: 1rem;
 }
-.navbar__menu
-    > ul
-    > li
-    .navbar__submenu
-    > .megamenu__list--item
-    > ul
-    > li:hover {
-    background: linear-gradient(172deg, #e250e5 5.32%, #4b50e6 94.32%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-}
+
 .navbar__submenu--single {
     min-width: 270px;
     max-width: 350px;
@@ -219,7 +284,7 @@
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
-.navbar__submenu::before {
+.navbar__menulist ul::before {
     content: '';
     position: absolute;
     top: -5px;
@@ -248,7 +313,6 @@
     box-shadow: rgb(59 53 53 / 30%) 0px 20px 18px !important;
 }
 .sticky--header .container {
-    padding: 0.5%;
     max-width: 100%;
 }
 @media (max-width: 440px) {

@@ -218,6 +218,9 @@
     border-bottom: 0.1rem solid #5142fca6;
     box-shadow: 0.17rem 0.12rem 0.2rem 0.1rem #2d276a;
 }
+.editProfile__account input:focus + label:focus-within{
+    border-bottom: 0.1rem solid #5142fca6;
+}
 .navbar--right__state a:first-child {
     position: relative;
 }
