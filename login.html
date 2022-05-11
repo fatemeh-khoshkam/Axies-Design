@@ -20,10 +20,21 @@
         <link rel="stylesheet" href="css/login.css" />
     </head>
     <body>
+        <!-- preloader start -->
+        <div id="preloader">
+            <div class="spinner">
+                <div class="spinner-item"></div>
+                <div class="spinner-item"></div>
+                <div class="spinner-item"></div>
+                <div class="spinner-item"></div>
+                <div class="spinner-item"></div>
+            </div>
+        </div>
+        <!-- preloader end -->
         <div class="login__container">
             <div class="login__wrapper">
                 <div class="login__item login__item--left">
-                    <img src="image/07_login/background.jpg" alt="" />
+                    <img src="image/07_login/bg.svg" alt="" />
                 </div>
                 <div class="login__item login__item--right">
                     <div class="login--title">Sign In</div>
@@ -63,8 +74,14 @@
                         <i class="fa-solid fa-envelope footer--social-item"></i>
                         <i class="fa-brands fa-github footer--social-item"></i>
                     </div>
+                    <div class="login--preArrow">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                        <a href="index.html">go to menu</a>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- script links -->
+        <script src="js/script.js"></script>
     </body>
 </html>

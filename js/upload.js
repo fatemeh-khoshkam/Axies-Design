@@ -117,3 +117,24 @@ deleteBtn.addEventListener('click',function(){
             }
         });
 });
+
+
+/* let headerCover = document.querySelector('#Item');
+let coverImg = document.querySelectorAll('.editProfile__right--coverImage img');
+coverImg.forEach(item=>{
+    if(this.addEventListener('click', (e) => { 
+        console.log(item[e]);
+    }));
+}); 
+coverImg[0].addEventListener("click", function() {
+    console.log(headerCover.style.backgroundImage)
+
+    headerCover.style.backgroundImage = "url('image/09_Cover Image/option1_bg_profile.jpg')";
+    headerCover.style.animation = "move-bg 13s ease infinite"; 
+    headerCover.style.filter = "brightness(0.8)"; 
+})
+coverImg[1].addEventListener("click", function() {    
+    headerCover.style.backgroundImage = "url('image/09_Cover Image/option2_bg_profile.jpg')";
+    headerCover.style.animation = "move-bg 13s ease infinite"; 
+    headerCover.style.filter = "brightness(0.8)"; 
+}) */

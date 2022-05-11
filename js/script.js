@@ -19,10 +19,6 @@ function setTimer(enddate, elem){
   })()
 }
 
-
-
-
-  
 ///// preloader
 let overlay = document.getElementById("preloader");
 window.addEventListener('load', function () {
