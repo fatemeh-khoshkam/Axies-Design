@@ -26,9 +26,6 @@ window.addEventListener("scroll", function () {
 });
 
 
-
-
-
 /***  mobile menu ***/
 const nav = document.querySelector('#menu');
 const menuOpen = document.querySelector('#nav-open');
@@ -41,22 +38,21 @@ let subMenu;
 
 
 menuItem.addEventListener('click', (e) => {
-    if (e.target.closest('.navbar__haschild')) {
+    if (window.innerWidth < 1022) {
+      if (e.target.closest('.navbar__haschild')) {
         const hasChildren = e.target.closest('.navbar__haschild');
         showSubMenu(hasChildren);
+      }
     }
 }); 
-
 
 menuOpen.addEventListener('click', () => {
     toggleMenu();
 });
 menuClosed.addEventListener('click', () => {
-    hideSubMenu();
     toggleMenu();
 });
 menuOverlay.addEventListener('click', () => {
-    hideSubMenu();
     toggleMenu();
 });
 function toggleMenu() {
@@ -64,7 +60,7 @@ function toggleMenu() {
     menuOverlay.classList.toggle('active');
 }
 menuArrow.addEventListener('click', () => {
-  hideSubMenu();
+    hideSubMenu();
 }); 
 
  function showSubMenu(hasChildren) {
@@ -85,10 +81,30 @@ function hideSubMenu() {
   menu.querySelector(".menu-mobile-header").classList.remove("active");
 } 
 
-
-window.addEventListener('load', (event) => {
-  
-  let sub1 = document.querySelectorAll('.navbar__haschild ul');
-
-
-}); 
+function checkMediaQuery() {
+  // Check if the media query is true
+  if (window.innerWidth > 1022) {
+    let subNav = document.querySelectorAll('.navbar__haschild ul');
+    subNav.forEach(item=>{
+      item.style.animation = '';
+    }); 
+  } 
+}
+function chkWallet(){
+  const walletText = document.getElementById('wallet');
+  if (window.innerWidth > 1340) {
+    walletText.innerHTML = 'Wallet connect';
+    walletText.style.marginLeft = '1rem';
+  } 
+  else{
+    walletText.innerHTML = '';
+    walletText.style.marginLeft = '0';
+  } 
+}
+window.addEventListener('load',() => {    
+  chkWallet();    
+});
+window.addEventListener('resize',() => {    
+  checkMediaQuery();
+  chkWallet();    
+});

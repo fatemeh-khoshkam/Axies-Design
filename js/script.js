@@ -1,14 +1,4 @@
-/* window.onresize = function () {
-   const span = document.getElementById('wallet');
-   if (this.innerWidth < 320) {
-       span.innerHTML = '';
-   } else {
-       span.innerHTML = 'Wallet connect';
-   }
-};
- */
-
- // Set the date we're counting down to
+// Set the date we're counting down to
 function setTimer(enddate, elem){
    (function tick() {
       var now = new Date().getTime();
