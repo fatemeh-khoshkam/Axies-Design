@@ -388,10 +388,6 @@
     .navbar__menu > ul > li .navbar__submenu > ul > li > a {
         font-size: 1.4rem;
     }
-    
-    .sticky--header .navbar__menu > ul > li {
-        margin-left: 1.9rem;
-    }
     .sticky--header .navbar__menu > ul > li > a {
         font-size: 1.5rem;
     }

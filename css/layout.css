@@ -23,6 +23,16 @@
     --font-size-md: 1rem;
     --font-size-lg: 1.25rem;
     --font-size-xl: 1.5rem;
+
+
+    --size: 75px;
+    --clr-bg: #272324;
+    --clr1: #862cff;
+    --clr2: #7826e6ed;
+    --clr3: #6a21cced;
+    --clr4: #5b1bb0ed;
+    --clr5: #4d1794ed;
+
 }
 ::-webkit-scrollbar {
     width: 0.8rem;
@@ -142,6 +152,63 @@ a {
 #scroll--top:hover {
     transform: translateY(-5%);
 }
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #20112f;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spinner {
+    --animation-duration: 1000ms;
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  .spinner .spinner-item {
+    height: 50%;
+    background-color: var(--clr-spinner);
+    width: calc(var(--size) / 13);
+    animation: spinner var(--animation-duration) ease-in-out infinite;
+    border-radius: 1rem;
+  }
+  @keyframes spinner {
+    25% {
+      transform: scaleY(2);
+    }
+    50% {
+      transform: scaleY(1);
+    }
+  }
+  .spinner .spinner-item:nth-child(1) {
+    --clr-spinner: var(--clr1);
+  }
+  .spinner .spinner-item:nth-child(2) {
+    --clr-spinner: var(--clr3);
+    animation-delay: calc(var(--animation-duration) / 10);
+  }
+  .spinner .spinner-item:nth-child(3) {
+    --clr-spinner: var(--clr5);
+    animation-delay: calc(var(--animation-duration) / 10 * 2);
+  }
+  .spinner .spinner-item:nth-child(4) {
+    --clr-spinner: var(--clr4);
+    animation-delay: calc(var(--animation-duration) / 10 * 3);
+  }
+  .spinner .spinner-item:nth-child(5) {
+    --clr-spinner: var(--clr2);
+    animation-delay: calc(var(--animation-duration) / 10 * 4);
+  }
+
+
 .sticky__bar {
     position: fixed;
     top: 40%;
