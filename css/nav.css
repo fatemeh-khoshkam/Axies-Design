@@ -136,6 +136,7 @@
     font-size: 1.5rem;
     color: snow;
     padding: 0 2rem;
+    cursor: pointer;
 }
 .navbar--right__wallet a:last-child {
     display: flex;
