@@ -315,22 +315,7 @@
     margin-top: 1rem;
 }
 
-@media (min-width: 500px) {
-    .auction__media--counter {
-        left: 33%;
-    }
-}
-
-@media (min-width: 688px) {
-    .auction__media--counter {
-        left: 25%;
-    }
-}
-
 @media (min-width: 992px) {
-    .auction__media--counter {
-        left: 17%;
-    }
     .auction__card--title a {
         font-size: 1.4rem;
     }
@@ -351,9 +336,6 @@
     }
     .auction__card--info {
         align-items: center;
-    }
-    .auction__media--counter {
-        left: 25%;
     }
     .auction__card--title a {
         font-size: 1.8rem;

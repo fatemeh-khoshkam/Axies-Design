@@ -348,11 +348,6 @@
     z-index: 1;
     top: -0.0625rem;
 }
-.tab-content .auction__author {
-    background-color: transparent !important;
-    gap: 1.3rem;
-    justify-content: space-between;
-}
 .tab-content .auction__author--info {
     display: flex;
     flex-direction: column;
@@ -417,7 +412,13 @@
 .auctionItem--icon:hover i {
     color: rgb(241 222 99 / 82%);
 }
-
+.tab-content .auction__author {
+    background-color: transparent !important;
+    gap: 1.3rem;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(39 39 39 / 50%);
+    border-radius: 0;
+}
 @keyframes move-bg {
     0% {
         background-position: 0% 50%;
@@ -449,11 +450,10 @@
 }
 
 /* Media Query */
-@media only screen and (max-width: 575px) {
-    .auctionItem__wrapper {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        display: grid;
-    }
+
+
+
+@media only screen and (max-width: 1390px) {
     .tab-content {
         height: 16rem;
     }
@@ -461,63 +461,12 @@
         padding: 14rem 0;
     }
 }
-
-@media only screen and (min-width: 576px) {
-    .auctionItem__wrapper {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        display: grid;
-    }
+@media only screen and (max-width: 1200px) {
     .tab-content {
         height: 16rem;
     }
     #auction {
         padding: 14rem 0;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .auctionItem__wrapper {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        display: grid;
-    }
-    .tab-content {
-        height: 16rem;
-    }
-    #auction {
-        padding: 14rem 0;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .auctionItem__wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        display: grid;
-    }
-    .tab-content {
-        height: 16rem;
-    }
-    #auction {
-        padding: 14rem 0;
-    }
-    .auction__info--author {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-    .auction__price {
-        align-items: center;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .auctionItem__wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        display: grid;
-    }
-    .tab-content {
-        height: 16rem;
-    }
-    #auction {
-        padding: 7rem 0;
     }
     .auction__info--author {
         display: flex;
@@ -527,13 +476,78 @@
         align-items: flex-end;
     }
 }
-
-@media only screen and (min-width: 1400px) {
-    .auctionItem__wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        display: grid;
-    }
+@media only screen and (max-width: 992px) {
     .tab-content {
         height: 16rem;
     }
+    #auction {
+        padding: 14rem 0;
+    }
+    .auction__price {
+        align-items: center;
+    }
 }
+@media only screen and (max-width: 800px) {
+    #Item{
+        padding: 10rem 0 5rem 0;
+    }
+    #Item .circle{
+        display: none ;
+    }
+    .item--title h2{
+        font-size: 3rem;
+    }
+    .item--breadcrumbs{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .auctionItem__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (max-width: 575px) {
+    .tab-content {
+        height: 16rem;
+    }
+    #auction {
+        padding: 14rem 0;
+    }
+}
+@media only screen and (max-width: 450px) {
+
+    .tab-label{
+        padding: 0 0.9rem;
+    }
+    .auctionItem--owners .auction__author {  
+        flex-direction: column;
+        align-items: center;
+    }
+    .auctionItem--right .tab-content .auction__author{
+        align-items: flex-start;
+    }
+    .auctionItem--right .auctionItem--owners:nth-child(3){
+         text-align: center;
+    }
+    .auction__author--left{
+        flex-direction: column;
+    }
+    .auctionItem--right .tab-content .auction__author--info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .tab-content .auction__author--left .auction__author--info h6{
+        flex-direction: column;
+        align-items: baseline;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .auction__top{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+
+
+

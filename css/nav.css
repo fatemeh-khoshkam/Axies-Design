@@ -399,7 +399,6 @@
 
 @media screen and (max-width: 1022px){
     .searchBar input {
-        border-radius: 10px;
         width: 50vw;
     }
     .navbar__menu ::-webkit-scrollbar {
