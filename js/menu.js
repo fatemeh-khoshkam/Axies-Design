@@ -26,6 +26,27 @@ window.addEventListener("scroll", function () {
 });
 
 
+/*** search ***/
+const searchIcon = document.querySelector("#search");
+const blurBg = document.querySelector(".blur-searchBg");
+function openSearch() {
+  console.log('a')
+  document.querySelector(".searchBar").classList.add("active");
+  document.querySelector(".blur-searchBg").classList.add("active");
+}
+
+function closeSearch() {
+  document.querySelector(".searchBar").classList.remove("active");
+  document.querySelector(".blur-searchBg").classList.remove("active");
+}
+
+blurBg.addEventListener("click", closeSearch);
+searchIcon.addEventListener("click", openSearch);
+
+
+
+
+
 /***  mobile menu ***/
 const nav = document.querySelector('#menu');
 const menuOpen = document.querySelector('#nav-open');

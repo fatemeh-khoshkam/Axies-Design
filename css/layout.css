@@ -156,6 +156,8 @@ a {
     transition: all 0.3s ease-in-out;
     padding: 2rem 1rem;
     background-color: var(--bg-dark);
+    visibility: visible;
+    opacity: 1;
 }
 .socials__links {
     display: flex;

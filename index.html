@@ -24,6 +24,18 @@
         <link rel="stylesheet" href="css/footer.css" />
     </head>
     <body>
+        <div class="blur-searchBg"></div>
+        <div class="searchBar">
+            <input
+                type="text"
+                name="search"
+                id="txtSearch"
+                placeholder="Search ..."
+            />
+            <button type="submit" class="search--submit">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
         <!-- header start -->
         <header id="header">
             <div class="container">
@@ -360,7 +372,7 @@
                             </li>
                         </ul>
                         <div class="navbar--right__wallet">
-                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a id="search"><i class="fas fa-search"></i></a>
                             <a href="#" class="btn">
                                 <i class="fa-solid fa-wallet"></i>
                                 <span id="wallet">Wallet connect</span>
@@ -894,227 +906,185 @@
                         <div class="seller__top">
                             <h2>Top Seller</h2>
                         </div>
-                        <div class="seller__bottom">
-                            <div class="seller__cards">
-                                <div class="seller__cards--item">
-                                    <a href="#">
-                                        <div class="seller__cards--avatar">
-                                            <img
-                                                src="image/04_Top Seller/avt-1.jpg"
-                                                alt=""
-                                            />
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <div class="seller__cards--info">
-                                            <h3 class="seller__cards--name">
-                                                Crispen Berry
-                                            </h3>
-                                            <p>
-                                                137.54
-                                                <i
-                                                    class="fa-brands fa-ethereum"
-                                                ></i>
-                                            </p>
-                                        </div>
-                                    </a>
+                        <div class="seller__cards">
+                            <div class="seller__cards--item">
+                                <div class="seller__cards--avatar">
+                                    <img
+                                        src="image/04_Top Seller/avt-1.jpg"
+                                        alt=""
+                                    />
+                                    <i class="fa-solid fa-check"></i>
                                 </div>
-                                <div class="seller__cards--item">
-                                    <a href="#">
-                                        <div class="seller__cards--avatar">
-                                            <img
-                                                src="image/04_Top Seller/avt-2.jpg"
-                                                alt=""
-                                            />
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <div class="seller__cards--info">
-                                            <h3 class="seller__cards--name">
-                                                Windsor Lane
-                                            </h3>
-                                            <p>
-                                                38.52
-                                                <i
-                                                    class="fa-brands fa-ethereum"
-                                                ></i>
-                                            </p>
-                                        </div>
-                                    </a>
+                                <div class="seller__cards--info">
+                                    <h3 class="seller__cards--name">
+                                        Crispen Berry
+                                    </h3>
+                                    <p>
+                                        137.54
+                                        <i class="fa-brands fa-ethereum"></i>
+                                    </p>
                                 </div>
-                                <div class="seller__cards--item">
-                                    <a href="#">
-                                        <div class="seller__cards--avatar">
-                                            <img
-                                                src="image/04_Top Seller/avt-3.jpg"
-                                                alt=""
-                                            />
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <div class="seller__cards--info">
-                                            <h3 class="seller__cards--name">
-                                                Blake Banks
-                                            </h3>
-                                            <p>
-                                                193.77
-                                                <i
-                                                    class="fa-brands fa-ethereum"
-                                                ></i>
-                                            </p>
-                                        </div>
-                                    </a>
+                            </div>
+                            <div class="seller__cards--item">
+                                <div class="seller__cards--avatar">
+                                    <img
+                                        src="image/04_Top Seller/avt-2.jpg"
+                                        alt=""
+                                    />
+                                    <i class="fa-solid fa-check"></i>
                                 </div>
-                                <div class="seller__cards--item">
-                                    <a href="#">
-                                        <div class="seller__cards--avatar">
-                                            <img
-                                                src="image/04_Top Seller/avt-9.jpg"
-                                                alt=""
-                                            />
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <div class="seller__cards--info">
-                                            <h3 class="seller__cards--name">
-                                                Andy Hurlbutt
-                                            </h3>
-                                            <p>
-                                                82.79
-                                                <i
-                                                    class="fa-brands fa-ethereum"
-                                                ></i>
-                                            </p>
-                                        </div>
-                                    </a>
+                                <div class="seller__cards--info">
+                                    <h3 class="seller__cards--name">
+                                        Windsor Lane
+                                    </h3>
+                                    <p>
+                                        38.52
+                                        <i class="fa-brands fa-ethereum"></i>
+                                    </p>
                                 </div>
-                                <div class="seller__cards--item">
-                                    <a href="#">
-                                        <div class="seller__cards--avatar">
-                                            <img
-                                                src="image/04_Top Seller/avt-4.jpg"
-                                                alt=""
-                                            />
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <div class="seller__cards--info">
-                                            <h3 class="seller__cards--name">
-                                                Matt Ramos
-                                            </h3>
-                                            <p>
-                                                70.46
-                                                <i
-                                                    class="fa-brands fa-ethereum"
-                                                ></i>
-                                            </p>
-                                        </div>
-                                    </a>
+                            </div>
+                            <div class="seller__cards--item">
+                                <div class="seller__cards--avatar">
+                                    <img
+                                        src="image/04_Top Seller/avt-3.jpg"
+                                        alt=""
+                                    />
+                                    <i class="fa-solid fa-check"></i>
                                 </div>
-                                <div class="seller__cards--item">
-                                    <a href="#">
-                                        <div class="seller__cards--avatar">
-                                            <img
-                                                src="image/04_Top Seller/avt-5.jpg"
-                                                alt=""
-                                            />
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <div class="seller__cards--info">
-                                            <h3 class="seller__cards--name">
-                                                Tommy Alvarez
-                                            </h3>
-                                            <p>
-                                                170.3
-                                                <i
-                                                    class="fa-brands fa-ethereum"
-                                                ></i>
-                                            </p>
-                                        </div>
-                                    </a>
+                                <div class="seller__cards--info">
+                                    <h3 class="seller__cards--name">
+                                        Blake Banks
+                                    </h3>
+                                    <p>
+                                        193.77
+                                        <i class="fa-brands fa-ethereum"></i>
+                                    </p>
                                 </div>
-                                <div class="seller__cards--item">
-                                    <a href="#">
-                                        <div class="seller__cards--avatar">
-                                            <img
-                                                src="image/04_Top Seller/avt-6.jpg"
-                                                alt=""
-                                            />
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <div class="seller__cards--info">
-                                            <h3 class="seller__cards--name">
-                                                Andy Hurlbutt
-                                            </h3>
-                                            <p>
-                                                82.79
-                                                <i
-                                                    class="fa-brands fa-ethereum"
-                                                ></i>
-                                            </p>
-                                        </div>
-                                    </a>
+                            </div>
+                            <div class="seller__cards--item">
+                                <div class="seller__cards--avatar">
+                                    <img
+                                        src="image/04_Top Seller/avt-9.jpg"
+                                        alt=""
+                                    />
+                                    <i class="fa-solid fa-check"></i>
                                 </div>
-                                <div class="seller__cards--item">
-                                    <a href="#">
-                                        <div class="seller__cards--avatar">
-                                            <img
-                                                src="image/04_Top Seller/avt-7.jpg"
-                                                alt=""
-                                            />
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <div class="seller__cards--info">
-                                            <h3 class="seller__cards--name">
-                                                Monica Lucas
-                                            </h3>
-                                            <p>
-                                                52.8
-                                                <i
-                                                    class="fa-brands fa-ethereum"
-                                                ></i>
-                                            </p>
-                                        </div>
-                                    </a>
+                                <div class="seller__cards--info">
+                                    <h3 class="seller__cards--name">
+                                        Andy Hurlbutt
+                                    </h3>
+                                    <p>
+                                        82.79
+                                        <i class="fa-brands fa-ethereum"></i>
+                                    </p>
                                 </div>
-                                <div class="seller__cards--item">
-                                    <a href="#">
-                                        <div class="seller__cards--avatar">
-                                            <img
-                                                src="image/04_Top Seller/avt-3.jpg"
-                                                alt=""
-                                            />
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <div class="seller__cards--info">
-                                            <h3 class="seller__cards--name">
-                                                Crispen Berry
-                                            </h3>
-                                            <p>
-                                                137.54
-                                                <i
-                                                    class="fa-brands fa-ethereum"
-                                                ></i>
-                                            </p>
-                                        </div>
-                                    </a>
+                            </div>
+                            <div class="seller__cards--item">
+                                <div class="seller__cards--avatar">
+                                    <img
+                                        src="image/04_Top Seller/avt-4.jpg"
+                                        alt=""
+                                    />
+                                    <i class="fa-solid fa-check"></i>
                                 </div>
-                                <div class="seller__cards--item">
-                                    <a href="#">
-                                        <div class="seller__cards--avatar">
-                                            <img
-                                                src="image/04_Top Seller/avt-8.jpg"
-                                                alt=""
-                                            />
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <div class="seller__cards--info">
-                                            <h3 class="seller__cards--name">
-                                                Matt Ramos
-                                            </h3>
-                                            <p>
-                                                70.46
-                                                <i
-                                                    class="fa-brands fa-ethereum"
-                                                ></i>
-                                            </p>
-                                        </div>
-                                    </a>
+                                <div class="seller__cards--info">
+                                    <h3 class="seller__cards--name">
+                                        Matt Ramos
+                                    </h3>
+                                    <p>
+                                        70.46
+                                        <i class="fa-brands fa-ethereum"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="seller__cards--item">
+                                <div class="seller__cards--avatar">
+                                    <img
+                                        src="image/04_Top Seller/avt-5.jpg"
+                                        alt=""
+                                    />
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="seller__cards--info">
+                                    <h3 class="seller__cards--name">
+                                        Tommy Alvarez
+                                    </h3>
+                                    <p>
+                                        170.3
+                                        <i class="fa-brands fa-ethereum"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="seller__cards--item">
+                                <div class="seller__cards--avatar">
+                                    <img
+                                        src="image/04_Top Seller/avt-6.jpg"
+                                        alt=""
+                                    />
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="seller__cards--info">
+                                    <h3 class="seller__cards--name">
+                                        Andy Hurlbutt
+                                    </h3>
+                                    <p>
+                                        82.79
+                                        <i class="fa-brands fa-ethereum"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="seller__cards--item">
+                                <div class="seller__cards--avatar">
+                                    <img
+                                        src="image/04_Top Seller/avt-7.jpg"
+                                        alt=""
+                                    />
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="seller__cards--info">
+                                    <h3 class="seller__cards--name">
+                                        Monica Lucas
+                                    </h3>
+                                    <p>
+                                        52.8
+                                        <i class="fa-brands fa-ethereum"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="seller__cards--item">
+                                <div class="seller__cards--avatar">
+                                    <img
+                                        src="image/04_Top Seller/avt-3.jpg"
+                                        alt=""
+                                    />
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="seller__cards--info">
+                                    <h3 class="seller__cards--name">
+                                        Crispen Berry
+                                    </h3>
+                                    <p>
+                                        137.54
+                                        <i class="fa-brands fa-ethereum"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="seller__cards--item">
+                                <div class="seller__cards--avatar">
+                                    <img
+                                        src="image/04_Top Seller/avt-8.jpg"
+                                        alt=""
+                                    />
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="seller__cards--info">
+                                    <h3 class="seller__cards--name">
+                                        Matt Ramos
+                                    </h3>
+                                    <p>
+                                        70.46
+                                        <i class="fa-brands fa-ethereum"></i>
+                                    </p>
                                 </div>
                             </div>
                         </div>

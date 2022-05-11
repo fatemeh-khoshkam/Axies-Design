@@ -20,10 +20,13 @@
 .seller__cards {
     width: 100%;
     display: grid;
-    /*grid-template-columns: repeat(4, 1fr);*/
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     align-items: center;
     gap: 2rem;
+}
+.seller__cards--item{
+    display: flex;
+    gap: 1rem;
 }
 .seller__cards--item a {
     display: flex;
