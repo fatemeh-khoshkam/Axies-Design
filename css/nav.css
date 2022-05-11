@@ -3,7 +3,7 @@
     position: fixed;
     z-index: 99;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
     background-color: var(--bg-dark);
     border-bottom: 1px solid rgba(235, 235, 235, 0.2);
     -webkit-transition: all 0.5s ease;

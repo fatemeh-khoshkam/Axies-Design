@@ -30,524 +30,386 @@
         <link rel="stylesheet" href="css/profile.css" />
     </head>
     <body>
+        <!-- preloader start -->
+        <div id="preloader">
+            <div class="spinner">
+                <div class="spinner-item"></div>
+                <div class="spinner-item"></div>
+                <div class="spinner-item"></div>
+                <div class="spinner-item"></div>
+                <div class="spinner-item"></div>
+            </div>
+        </div>
+        <!-- preloader end -->
+        <!-- search start -->
+        <div class="blur-searchBg"></div>
+        <div class="searchBar">
+            <input
+                type="text"
+                name="search"
+                id="txtSearch"
+                placeholder="Search ..."
+            />
+            <button type="submit" class="search--submit">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+        <!-- search end -->
         <!-- header start -->
         <header id="header">
             <div class="container">
                 <div class="navbar">
-                    <div class="navbar__item navbar__item--left">
-                        <div class="navbar__logo">
-                            <a href="#">
-                                <img
-                                    src="image/01_header/logo_dark.png"
-                                    alt="Axies"
-                                />
-                            </a>
-                        </div>
+                    <div class="navbar__logo">
+                        <a href="#">
+                            <img
+                                src="image/01_header/logo_dark.png"
+                                alt="Axies"
+                            />
+                        </a>
                     </div>
+                    <div class="overlay"></div>
                     <!-- menu start -->
-                    <div class="navbar__item navbar__item--center">
-                        <nav class="navbar__menu">
-                            <ul class="navbar__menulists">
-                                <li
-                                    class="navbar__menulist navbar__menu--haschildren"
-                                >
-                                    <a href="#" class="navbar__menulink"
-                                        >Home<i
-                                            class="fa-solid fa-angle-down"
-                                        ></i
-                                    ></a>
-                                    <div
-                                        class="navbar__submenu navbar__megamenu navbar__column--mega2"
-                                    >
-                                        <div class="megamenu__list--item">
-                                            <h4>Home Pages</h4>
-                                            <ul>
-                                                <li>
-                                                    <a
-                                                        href="index.html"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Home 1</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Home 2</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Home 3</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Home 4</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Home 5</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Home 6</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Home 7</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Home 8 (Special)</a
-                                                    >
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="megamenu__list--item">
-                                            <h4>Slider Styles</h4>
-                                            <ul>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Text Type</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Text Scroll</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Text Rotate</a
-                                                    >
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="megamenu__list--item">
-                                            <img
-                                                src="image/05_Today's Picks/card-item-9.jpg"
-                                                alt=""
-                                            />
-                                        </div>
-                                    </div>
-                                </li>
-                                <li
-                                    class="navbar__menulist navbar__menu--haschildren"
-                                >
-                                    <a href="#" class="navbar__menulink"
-                                        >Explore<i
-                                            class="fa-solid fa-angle-down"
-                                        ></i
-                                    ></a>
-                                    <div
-                                        class="navbar__submenu navbar__megamenu navbar__column--mega2"
-                                    >
-                                        <div class="megamenu__list--item">
-                                            <h4>Styles</h4>
-                                            <ul>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Explore Style 1</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Explore Style 2</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Explore Style 3</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Explore Style 4</a
-                                                    >
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="megamenu__list--item">
-                                            <h4>Details</h4>
-                                            <ul>
-                                                <li>
-                                                    <a
-                                                        href="Item-details.html"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Item Details 1</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Item Details 2</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        class="navbar__submenu--link"
-                                                        ><i
-                                                            class="fa-solid fa-address-book"
-                                                        ></i
-                                                        >Live Auctions</a
-                                                    >
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="megamenu__list--item">
-                                            <img
-                                                src="image/05_Today's Picks/image-box-11.jpg"
-                                                alt=""
-                                            />
-                                        </div>
-                                    </div>
-                                </li>
-                                <li
-                                    class="navbar__menulist navbar__menu--haschildren"
-                                >
-                                    <a href="#" class="navbar__menulink"
-                                        >Activity<i
-                                            class="fa-solid fa-angle-down"
-                                        ></i
-                                    ></a>
-                                    <div
-                                        class="navbar__submenu navbar__submenu--single"
-                                    >
-                                        <ul class="navbar__submenu--lists">
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                    ><i
-                                                        class="fa-solid fa-chart-bar"
-                                                    ></i
-                                                    >Activity 1</a
-                                                >
-                                            </li>
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                >
-                                                    <i
-                                                        class="fa-solid fa-chart-column"
-                                                    ></i
-                                                    >Activity 2</a
-                                                >
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li
-                                    class="navbar__menulist navbar__menu--haschildren"
-                                >
-                                    <a href="#" class="navbar__menulink"
-                                        >Community<i
-                                            class="fa-solid fa-angle-down"
-                                        ></i
-                                    ></a>
-                                    <div
-                                        class="navbar__submenu navbar__submenu--single"
-                                    >
-                                        <ul class="navbar__submenu--lists">
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                    ><i
-                                                        class="fa-solid fa-chart-bar"
-                                                    ></i
-                                                    >Blog</a
-                                                >
-                                            </li>
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                >
-                                                    <i
-                                                        class="fa-solid fa-chart-column"
-                                                    ></i
-                                                    >Blog Details</a
-                                                >
-                                            </li>
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                >
-                                                    <i
-                                                        class="fa-solid fa-chart-column"
-                                                    ></i
-                                                    >Help Center</a
-                                                >
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li
-                                    class="navbar__menulist navbar__menu--haschildren"
-                                >
-                                    <a href="#" class="navbar__menulink"
-                                        >Pages<i
-                                            class="fa-solid fa-angle-down"
-                                        ></i
-                                    ></a>
-                                    <div
-                                        class="navbar__submenu navbar__submenu--single"
-                                    >
-                                        <ul class="navbar__submenu--lists">
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                    ><i
-                                                        class="fa-solid fa-address-book"
-                                                    ></i
-                                                    >Authors 1</a
-                                                >
-                                            </li>
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                    ><i
-                                                        class="fa-solid fa-address-book"
-                                                    ></i
-                                                    >Authors 2</a
-                                                >
-                                            </li>
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                    ><i
-                                                        class="fa-solid fa-address-book"
-                                                    ></i
-                                                    >Wallet connect</a
-                                                >
-                                            </li>
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                    ><i
-                                                        class="fa-solid fa-address-book"
-                                                    ></i
-                                                    >Create Item</a
-                                                >
-                                            </li>
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                    ><i
-                                                        class="fa-solid fa-address-book"
-                                                    ></i
-                                                    >Edit Profile</a
-                                                >
-                                            </li>
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                    ><i
-                                                        class="fa-solid fa-address-book"
-                                                    ></i
-                                                    >Ranking</a
-                                                >
-                                            </li>
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="login.html"
-                                                    class="navbar__submenu--link"
-                                                    ><i
-                                                        class="fa-solid fa-address-book"
-                                                    ></i
-                                                    >Login</a
-                                                >
-                                            </li>
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                    ><i
-                                                        class="fa-solid fa-address-book"
-                                                    ></i
-                                                    >Sign Up</a
-                                                >
-                                            </li>
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                    ><i
-                                                        class="fa-solid fa-address-book"
-                                                    ></i
-                                                    >No Result</a
-                                                >
-                                            </li>
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                    ><i
-                                                        class="fa-solid fa-address-book"
-                                                    ></i
-                                                    >FAQ</a
-                                                >
-                                                >
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li
-                                    class="navbar__menulist navbar__menu--haschildren"
-                                >
-                                    <a href="#" class="navbar__menulink"
-                                        >Contact<i
-                                            class="fa-solid fa-angle-down"
-                                        ></i
-                                    ></a>
-                                    <div
-                                        class="navbar__submenu navbar__submenu--single"
-                                    >
-                                        <ul class="navbar__submenu--lists">
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                    ><i
-                                                        class="fa-solid fa-address-book"
-                                                    ></i
-                                                    >Contact 1</a
-                                                >
-                                            </li>
-                                            <li class="navbar__submenu--list">
-                                                <a
-                                                    href="#"
-                                                    class="navbar__submenu--link"
-                                                    ><i
-                                                        class="fa-solid fa-address-book"
-                                                    ></i
-                                                    >Contact 2</a
-                                                >
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <!-- menu end -->
-                    <div class="navbar__item navbar__item--right">
+                    <nav class="navbar__menu" id="menu">
+                        <div class="menu-mobile-header">
+                            <button
+                                id="nav-close"
+                                class="btn nav__btn nav__btn--close"
+                            >
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <div class="menu-mobile-title"></div>
+                            <button type="button" class="menu-mobile-arrow">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                        </div>
+                        <ul class="navbar__menulists">
+                            <li class="navbar__menulist navbar__haschild">
+                                <a href="#" class="navbar__menulink"
+                                    >Home<i class="fa-solid fa-angle-down"></i
+                                ></a>
+                                <ul class="navbar__menu--child">
+                                    <li>
+                                        <a
+                                            href="index.html"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-address-book"
+                                            ></i
+                                            >Home 1</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-address-book"
+                                            ></i
+                                            >Home 2</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-address-book"
+                                            ></i
+                                            >Home 3</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-address-book"
+                                            ></i
+                                            >Home 4</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-address-book"
+                                            ></i
+                                            >Home 5</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-address-book"
+                                            ></i
+                                            >Home 6</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-address-book"
+                                            ></i
+                                            >Home 7</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navbar__menulist navbar__haschild">
+                                <a href="#" class="navbar__menulink"
+                                    >Explore<i
+                                        class="fa-solid fa-angle-down"
+                                    ></i
+                                ></a>
+                                <ul class="navbar__menu--child">
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i class="fa-solid fa-browser"></i
+                                            >Explore 1</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i class="fa-solid fa-browser"></i
+                                            >Explore 2</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i class="fa-solid fa-browser"></i
+                                            >Explore 3</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i class="fa-solid fa-browser"></i
+                                            >Explore 4</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navbar__menulist navbar__haschild">
+                                <a href="#" class="navbar__menulink"
+                                    >Activity<i
+                                        class="fa-solid fa-angle-down"
+                                    ></i
+                                ></a>
+                                <ul class="navbar__menu--child">
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-chart-line"
+                                            ></i
+                                            >Activity 1</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-chart-line"
+                                            ></i
+                                            >Activity 2</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-chart-line"
+                                            ></i
+                                            >Activity 3</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-chart-line"
+                                            ></i
+                                            >Activity 4</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-chart-line"
+                                            ></i
+                                            >Activity 5</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-chart-line"
+                                            ></i
+                                            >Activity 6</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navbar__menulist navbar__haschild">
+                                <a href="#" class="navbar__menulink"
+                                    >Community<i
+                                        class="fa-solid fa-angle-down"
+                                    ></i
+                                ></a>
+                                <ul class="navbar__menu--child">
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i class="fa-solid fa-comment"></i
+                                            >Community 1</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i class="fa-solid fa-comment"></i
+                                            >Community 2</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i class="fa-solid fa-comment"></i
+                                            >Community 3</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navbar__menulist navbar__haschild">
+                                <a href="#" class="navbar__menulink"
+                                    >Pages<i class="fa-solid fa-angle-down"></i
+                                ></a>
+                                <ul class="navbar__menu--child">
+                                    <li>
+                                        <a
+                                            href="Item-details.html"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-file-lines"
+                                            ></i
+                                            >item details</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="profile.html"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-file-lines"
+                                            ></i
+                                            >edit profile</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="login.html"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-file-lines"
+                                            ></i
+                                            >login</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navbar__menulist navbar__haschild">
+                                <a href="#" class="navbar__menulink"
+                                    >Contact<i
+                                        class="fa-solid fa-angle-down"
+                                    ></i
+                                ></a>
+                                <ul class="navbar__menu--child">
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-address-book"
+                                            ></i
+                                            >Contact 1</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-address-book"
+                                            ></i
+                                            >Contact 2</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-address-book"
+                                            ></i
+                                            >Contact 3</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="navbar__submenu--link"
+                                            ><i
+                                                class="fa-solid fa-address-book"
+                                            ></i
+                                            >Contact 4</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                         <div class="navbar--right__wallet">
-                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a id="search"><i class="fas fa-search"></i></a>
                         </div>
-                        <!-- mobile menu trigger -->
-                        <div class="mobile-menu-trigger">
-                            <span></span>
-                        </div>
-                        <!-- mobile menu trigger -->
+                    </nav>
+                    <!-- menu end -->
+                    <div class="navbar--right">
                         <div class="navbar--right__state">
                             <a href="#">
                                 <span class="badge">3</span>
                                 <i class="fa-solid fa-bell"></i>
                             </a>
-
-                            <a href="login.html">
-                                <img
+                            <a href="login.html"
+                                ><img
                                     src="image/04_Top Seller/avt-5.jpg"
                                     class="profile--avatar"
                                     alt="avatar"
-                                />
-                            </a>
+                            /></a>
                             <a href="#"><i class="fa-solid fa-moon"></i></a>
                         </div>
+                        <button id="nav-open" class="btn nav__btn">☰</button>
                     </div>
                 </div>
             </div>
@@ -861,6 +723,7 @@
         <!-- scripts -->
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="js/menu.js"></script>
+        <script src="js/script.js"></script>
         <script src="js/upload.js"></script>
     </body>
 </html>

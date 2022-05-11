@@ -24,10 +24,19 @@
 .navbar--right__state a:nth-child(2) {
     background-color: var(--primary-font);
 }
-.navbar--right__state a:nth-child(2):hover i {
-    background: linear-gradient( 90deg, rgb(75 80 230 / 74%) 15%, rgb(130 80 230 / 79%) 57%, rgb(226 80 229 / 60%) 100%, rgb(75 80 230 / 80%) 100% );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.navbar--right__state a:nth-child(3) {
+    color: var(--primary-font);
+    background: linear-gradient(
+        90deg,
+        rgb(75 80 230 / 74%) 15%,
+        rgb(130 80 230 / 79%) 57%,
+        rgb(226 80 229 / 60%) 100%,
+        rgb(75 80 230 / 80%) 100%
+    );
+}
+.navbar--right__state a:nth-child(3) i {
+    -webkit-animation: star 1s linear infinite;
+    animation: star 1s linear infinite;
 }
 #editProfile {
     padding: 7rem 0;
@@ -250,7 +259,10 @@
         gap: 0.2rem;
     }
     #Item {
-        padding: 20rem 0 7rem 0 !important;
+        padding: 13rem 0 7rem 0 !important;
+    }
+    .navbar--right__state{
+        display: none;
     }
 }
 @media only screen and (min-width: 250px) {
@@ -270,6 +282,12 @@
         grid-template-columns: repeat(1,1fr);
     }
 
+
+}
+@media only screen and (min-width: 490px) {
+    .navbar--right__state{
+        display: flex;
+    }
 }
 @media only screen and (min-width: 768px) {
     #editProfile .container {
