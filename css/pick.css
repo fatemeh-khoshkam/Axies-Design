@@ -91,13 +91,12 @@
     background-position: 0 100%;
 }
 .pick__bottom {
-    width: 100%;
-    height: 100%;
     display: grid;
-    grid-template-columns: 100%;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-items: center;
 }
 .pick__history {
     display: flex;
@@ -110,31 +109,48 @@
     top: 1rem;
     right: 1rem;
 }
-.pick__wrapper div:nth-child(4).filter--btn {
+.pick__wrapper:last-child .filter--btn{
     margin: 0 auto;
 }
-@media (min-width: 500px) {
-    .pick__bottom {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-}
 
-@media (min-width: 688px) {
-    .pick__bottom {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+@media (max-width: 992px) {
+    .pick__filters{
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
     }
-}
+    .pick__filters--left{
+        gap: 1rem;
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
-@media (min-width: 992px) {
-    .pick__bottom {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        grid-template-rows: 1;
-        transition: all 0.5s ease-in-out;
     }
 }
-@media (min-width: 1312px) {
-    .pick__bottom {
-        width: 100%;
-        gap: 3rem;
+@media (max-width: 400px) {
+    .pick__top {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .auction__top {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+@media (max-width: 300px) {
+    .auction__card--info {
+        flex-direction: column;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .auction__card--bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
     }
 }
