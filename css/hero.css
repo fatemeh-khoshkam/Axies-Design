@@ -271,16 +271,15 @@
         font-size: 1.3rem;
     }
     .hero__wrapper--left h2 {
-        font-size: 3.5rem;
+        font-size: 4.4rem;
     }
     .hero__wrapper--left h2:nth-child(4) {
-        margin-top: 4rem;
+        margin-top: 5rem;
     }
 }
 @media (max-width: 420px) {
     .hero__wrapper--left {
         z-index: 1;
-        margin-top: 10%;
     }
     .hero__wrapper--right {
         position: absolute;
