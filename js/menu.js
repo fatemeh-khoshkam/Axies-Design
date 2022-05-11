@@ -1,3 +1,4 @@
+'use strict'
 const menu = document.getElementById('header');
 const scroll_btn = document.getElementById("scroll--top");
 
@@ -46,6 +47,7 @@ menuItem.addEventListener('click', (e) => {
     }
 }); 
 
+
 menuOpen.addEventListener('click', () => {
     toggleMenu();
 });
@@ -68,14 +70,14 @@ menuArrow.addEventListener('click', () => {
  function showSubMenu(hasChildren) {
   subMenu = hasChildren.querySelector('.navbar__menu--child');
   subMenu.classList.add('active');
-  subMenu.style.animation = 'slide-toLeft 0.5s ease forwards';
+  subMenu.style.animation = 'slide-toLeft 0.5s ease forwards'; 
   const menuTitle = hasChildren.querySelector('.navbar__menulink i').parentNode.childNodes[0].textContent;
   menu.querySelector('.menu-mobile-title').innerHTML = menuTitle;
   menu.querySelector('.menu-mobile-header').classList.add('active'); 
 }
 
 function hideSubMenu() {
-  subMenu.style.animation = "slide-toRight 0.5s ease forwards";
+  subMenu.style.animation = "slide-toRight 0.5s ease forwards"; 
   setTimeout(() => {
       subMenu.classList.remove("active");
   }, 300);
@@ -84,10 +86,9 @@ function hideSubMenu() {
 } 
 
 
-function checkMediaQueryAnimation() {
-    // Check if the media query is true
-    if (window.innerWidth > 1022) {
-      subMenu.style.animation = "none";
-    }
-}
-window.addEventListener('resize', checkMediaQueryAnimation);
+window.addEventListener('load', (event) => {
+  
+  let sub1 = document.querySelectorAll('.navbar__haschild ul');
+
+
+}); 
