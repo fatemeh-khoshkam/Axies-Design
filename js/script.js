@@ -22,5 +22,7 @@ function setTimer(enddate, elem){
 ///// preloader
 let overlay = document.getElementById("preloader");
 window.addEventListener('load', function () {
-    overlay.style.display = 'none';
+    setTimeout(() => {
+      overlay.style.display = 'none';
+    }, 1000);
 })
