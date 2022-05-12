@@ -23,7 +23,7 @@ body {
     align-items: stretch;
     gap: 2rem;
     padding: 8rem;
-    background: linear-gradient(249deg, #170323, #092256e8, #200347);
+    background: linear-gradient(249deg, #33174f, #363a73e8, #200347);
     background-size: 600% 600%;
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
@@ -76,6 +76,7 @@ body {
 .login--form input:not(:last-of-type) {
     line-height: 2;
     border: 0.1rem solid #9da3b969;
+    border-bottom: 0.3rem solid #9da3b969;
     background: transparent;
     padding: 1rem;
     border-radius: 1rem;
@@ -135,7 +136,7 @@ body {
     position: absolute;
     top: 50%;
     left: 0;
-    border-top: solid 0.2rem #38405b;
+    border-top: solid 0.1rem #6a718b;
     z-index: -1;
     width: 45%;
 }
@@ -144,7 +145,7 @@ body {
     position: absolute;
     top: 50%;
     right: 0;
-    border-top: solid 0.2rem #38405b;
+    border-top: solid 0.1rem #6a718b;
     z-index: -1;
     width: 45%;
 }
