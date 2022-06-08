@@ -6,10 +6,10 @@ https://preview.themeforest.net/item/axies-nft-marketplace-html-template/full_sc
 
 # Axies Design
 you can see all pages demo :eyes: <br>
-- index :arrow_right: https://fatemeh-khoshkam-axies-design.netlify.app/
-- login :arrow_right: https://fatemeh-khoshkam-axies-design.netlify.app/login.html
-- details :arrow_right: https://fatemeh-khoshkam-axies-design.netlify.app/item-details
-- profile :arrow_right: http://fatemeh-khoshkam-axies-design.netlify.app/profile.html
+- **index** :arrow_right: https://fatemeh-khoshkam-axies-design.netlify.app/
+- **login** :arrow_right: https://fatemeh-khoshkam-axies-design.netlify.app/login.html
+- **details** :arrow_right: https://fatemeh-khoshkam-axies-design.netlify.app/item-details
+- **profile** :arrow_right: http://fatemeh-khoshkam-axies-design.netlify.app/profile.html
 
 ## Table of contents
 * [General info](#general-info)
@@ -24,8 +24,8 @@ you can see all pages demo :eyes: <br>
 - :arrow_right: functionality pages like profile ( upload and delete photos , ... )
 - :arrow_right:	Responsive
 
-## Technologies :hammer:
-Project is created with:
+## Technologies
+Project is created with :hammer::
 <br>
 <br>
 > <img width="100" src="https://user-images.githubusercontent.com/25181517/117447535-f00a3a00-af3d-11eb-89bf-45aaf56dbaf1.png">
